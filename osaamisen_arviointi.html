@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etusivu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #000000;
+            padding-top: 80px; /* Добавляем пространство сверху для кнопок */
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap; /* Сохраняем обтекание элементов на новых строках */
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            position: fixed; /* Фиксируем меню */
+            top: 0; /* Навигация всегда будет сверху */
+            width: 100%; /* Меню будет растягиваться на всю ширину */
+            z-index: 1000; /* Чтобы оно всегда было поверх остального контента */
+            background-color: white; /* Белый фон для меню */
+            padding: 10px 0; /* Добавляем немного отступов сверху и снизу для улучшения внешнего вида */
+        }
+
+
+        .knipka {
+            width: 150px;
+            height: 50px;
+            background-color: hsl(225, 3%, 51%);
+            border: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        .knipka a {
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .knipka:hover {
+            background-color: #000000;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px hsl(225, 3%, 51%);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .knipka {
+                width: 80%;
+            }
+        }
+
+        p {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигационные кнопки, которые будут фиксированы -->
+    <nav>
+        
+        <div class="knipka"><a href="kriteerit.html">Kriteerit</a></div>
+        <div class="knipka"><a href="etusivu.html">Etusivu</a></div>
+        <div class="knipka"><a href="tutkinnon_muodostuminen.html">Tutkinnon rakenne</a></div>
+        <div class="knipka"><a href="tutkintoosat.html">Tutkintoosat</a></div>
+    </nav>
+
+    <p>
+        Tervetuloa etusivulle! Tämä on verkkosivusto, jossa esittelen omaa osaamistani ja portfoliotani. Sivusto on luotu asiakaspalvelun ja verkkosivustojen suunnittelun kurssia varten. Täältä löydät lisätietoja projektiemme arviointikriteereistä, portfoliostani sekä yhteystiedoista. Olen luonut nämä sivut itse ja toivon, että ne ilmentävät osaamistani ja oppimiskokemuksiani.
+    </p>
+
+</body>
+</html>
+
+    <section>
+       
+        <p class="text"><strong>Osaamisen arviointi</strong></p>
+
+        <div class="arvosana">
+            <p>
+                Ammatilliset tutkinnon osat arvioidaan asteikolla 1–5 tutkinnon osan ammattitaitovaatimusten ja arviointikriteerien mukaisesti. 
+                Opiskelijan osaaminen arvioidaan tutkinnon osittain. 
+                Tutkinnon osan arvosana määräytyy sen mukaan, mille arviointiasteikon tasolle opiskelijan osaaminen kokonaisuutena parhaiten sijoittuu.
+            </p>
+        </div>
+
+        <div class="arvosana">
+            <p>
+                Yhteisten tutkinnon osien osa-alueet ja yritystoiminnan suunnittelu, työpaikkaohjaajaksi valmentautuminen, 
+                yrityksessä toimiminen ja huippuosaajana toimiminen tutkinnon osat arvioidaan asteikolla 1–5 tutkinnon osan 
+                ammattitaitovaatimusten, osaamistavoitteiden ja arviointikriteerien mukaisesti. 
+                Arvosanat 2 ja 4 määräytyvät seuraavasti:
+            </p>
+        </div>
+
+        <div class="arvosana">
+            <p>
+                <strong>2</strong> = Opiskelijan osaamisen taso ylittää selkeästi 1-tason, mutta ei yllä 3-tasolle.<br><br>
+                <strong>4</strong> = Opiskelijan osaamisen taso ylittää selkeästi 3-tason, mutta ei yllä 5-tasolle.
+            </p>
+        </div>
+
+
+    </section>
+</body>
+</html>

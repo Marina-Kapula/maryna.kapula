@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etusivu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap; /* Сохраняем обтекание элементов на новых строках */
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            position: fixed; /* Фиксируем меню */
+            top: 0; /* Навигация всегда будет сверху */
+            width: 100%; /* Меню будет растягиваться на всю ширину */
+            z-index: 1000; /* Чтобы оно всегда было поверх остального контента */
+            background-color: white; /* Белый фон для меню */
+            padding: 10px 0; /* Добавляем немного отступов сверху и снизу для улучшения внешнего вида */
+        }
+        .text {
+            margin-top: 90px;
+        }
+
+        .knipka {
+            width: 150px;
+            height: 50px;
+            background-color: hsl(225, 3%, 51%);
+            border: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .knipka a {
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .knipka:hover {
+            background-color: #000000;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px hsl(0, 0%, 100%);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .knipka {
+                width: 80%;
+            }
+        }
+
+        p {
+            margin: 20px;
+        }
+        section {
+            margin-top: 300px; /* Добавлен отступ сверху, чтобы текст не сливался с меню */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        
+        <div class="knipka"><a href="kriteerit.html">Kriteerit</a></div>
+        <div class="knipka"><a href="osaamisen_arviointi.html">Arviointi</a></div>
+        <div class="knipka"><a href="tutkinnon_muodostuminen.html">Tutkinnon rakenne</a></div>
+        <div class="knipka"><a href="tutkinnonosat.html">Tutkintoosat</a></div>
+    </nav>
+<div class="text">
+    <p>
+        Tervetuloa etusivulle! Tämä on verkkosivusto, jossa esittelen omaa osaamistani ja portfoliotani. Sivusto on luotu asiakaspalvelun ja verkkosivustojen suunnittelun kurssia varten. Täältä löydät lisätietoja projektiemme arviointikriteereistä, portfoliostani sekä yhteystiedoista. Olen luonut nämä sivut itse ja toivon, että ne ilmentävät osaamistani ja oppimiskokemuksiani. 
+    </p>
+
+
+
+    <p><strong class="strong-block">Tutkinnon suorittaneen osaaminen</strong>
+    Tieto- ja viestintätekniikan perustutkinnon suorittaneella on tieto- ja viestintätekniikan tehtävissä edellytetty ammattitaito, ja hän osaa toimia yhteistyökykyisesti tieto- ja viestintäteknisessä ympäristössä. Tutkinnon suorittanut osaa käyttää alan sanastoa, selvittää asiakkaan tarpeita ja tehdä asiakaslähtöisiä ratkaisuja tieto- ja viestintäteknisiin tehtäviin liittyen. Hän varmistaa, että työn lopputulos vastaa työlle asetettuja vaatimuksia.</p>
+   
+    <p><strong class="strong-block">Työtehtäviä, joissa tutkinnon suorittanut voi toimia</strong></p>
+
+    <p><strong>Elektroniikka-asentaja</strong> osaa tehdä elektroniikka-asennuksiin liittyviä asennus-, testaus- ja huoltotöitä. Hän osaa käsitellä oikein elektroniikka-asennuksissa tarvittavia komponentteja ja materiaaleja sekä käyttää tarvittavia työ- ja mittavälineitä.</p>
+
+    <p><strong>Hyvinvointiteknologia-asentaja</strong> osaa toimia sosiaali- ja terveysalan toimintaperiaatteiden ja arvojen mukaan. Hän osaa asentaa turvalaite- ja hyvinvointiteknologiajärjestelmiä sekä hyödyntää hyvinvointiteknologiaa asiakkaan toimintakyvyn ylläpitämiseksi. Hän varmistaa laitteiden turvallisen käytön ja opastaa asiakasta hyvinvointiteknologian käytössä.</p>
+
+    <p><strong>Tietoverkkoasentaja</strong> osaa tehdä tietoverkkokaapeloinnit asiakkaan vaatimusten ja ohjeiden mukaisesti. Hän huomioi tietoliikenneverkkojen rakenteet ja käytetyt materiaalit sekä tekee tarvittavia mittauksia ja testauksia järjestelmän toimivuuden varmistamiseksi.</p>
+
+    <p><strong>IT-tukihenkilö</strong> osaa toimia työasemien, verkko- ja lisälaitteiden sekä toimialueiden muodostamassa tieto- ja viestintäteknisessä ympäristössä. Hän toimii osana tietohallintoa sekä auttaa käyttäjiä erilaisissa teknisissä ongelmissa asiakkaan tiloissa tai etäyhteyden välityksellä.</p>
+
+    <p><strong>Ohjelmistokehittäjä</strong> osaa ohjelmoida, hyödyntää rajapintoja, käsitellä tietoa sekä käyttää versionhallintaa. Ohjelmistokehitystiimin jäsenenä toimiessaan hän kommunikoi asiakkaan kanssa, suunnittelee ohjelmiston toteutuksen ja varmistaa toteutettavien toimintojen laadun.</p>
+
+    <p>Tieto- ja viestintätekniikan perustutkinnon rakenne ja sisältö on suunniteltu niin, että sähkö- ja automaatioalalla toimiminen -tutkinnon osan suorittaneella on rajoitettuun sähköpätevyyteen 3 määritelty soveltuva koulutus.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriteerit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff; /* Светлый фон */
+            color: #000000; /* Темно-серый цвет для текста */
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap; /* Сохраняем обтекание элементов на новых строках */
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            position: fixed; /* Фиксируем меню */
+            top: 0; /* Навигация всегда будет сверху */
+            width: 100%; /* Меню будет растягиваться на всю ширину */
+            z-index: 1000; /* Чтобы оно всегда было поверх остального контента */
+            background-color: white; /* Белый фон для меню */
+            padding: 10px 0; /* Добавляем немного отступов сверху и снизу для улучшения внешнего вида */
+        }
+
+
+        .knipka {
+            width: 150px;
+            height: 50px;
+            background-color: hsl(225, 3%, 51%);
+            border: none; /* Нейтральный цвет */
+            border: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .knipka a {
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .knipka:hover {
+            background-color: #000000; /* Легкая темная серая при наведении */
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px hsl(225, 3%, 51%);
+        }
+
+        .main {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .all {
+            margin-top: 50px;
+        }
+        .table-container {
+            display: table;
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .table-container .table-row {
+            display: table-row;
+        }
+
+        .table-container .table-cell {
+            display: table-cell;
+            padding: 10px;
+            border: 1px solid #dddddd; /* Легкий серый цвет для границ */
+            text-align: left;
+        }
+
+        .table-container .table-header {
+            font-weight: bold;
+            background-color: hsl(0, 0%, 100%); /* Легкий серый для заголовков */
+        }
+
+        .table-container .table-cell-title {
+            width: 200px;
+            font-weight: bold;
+        }
+
+        .table-container .table-cell-description {
+            width: 100%;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .knipka {
+                width: 80%;
+            }
+
+            .main {
+                flex-direction: column;
+            }
+        }
+        section {
+            margin-top: 80px; /* Добавлен отступ сверху, чтобы текст не сливался с меню */
+        }
+    </style>
+</head>
+<body>
+    <!-- Ваш контент здесь -->
+</body>
+</html>
+
+
+    <!-- Меню -->
+    <nav>
+        <button class="knipka"><a href="etusivu.html">Etusivu</a></button>
+        <button class="knipka"><a href="tutkinnon_muodostuminen.html">Tutkinnon rakenne</a></button>
+        <button class="knipka"><a href="tutkinnonosat.html">Tutkinnonosat</a></button>
+        <button class="knipka"><a href="osaamisen_arviointi.html">Arviointi</a></button>
+    </nav>
+
+    <!-- Контейнер для таблицы -->
+<div class="all">
+    <div class="table-container">
+        <div class="table-row table-header">
+            <div class="table-cell table-cell-title">Arvosana</div>
+            <div class="table-cell table-cell-description">Opiskelija...</div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell table-cell-title"><strong>Tyydyttävä 1</strong></div>
+            <div class="table-cell table-cell-description">
+                toteuttaa työn ohjeiden mukaisesti<br>
+                toimii yhteistyökykyisesti<br>
+                tarvitsee joissakin tilanteissa lisäohjeita<br>
+                hyödyntää työssä tarvittavaa perustietoa<br>
+                muuttaa toimintaansa saamansa palautteen mukaisesti
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell table-cell-title"><strong>Tyydyttävä 2</strong></div>
+            <div class="table-cell table-cell-description">
+                toteuttaa työn oma-aloitteisesti ja ohjeiden mukaisesti<br>
+                toimii yhteistyökykyisesti ja vuorovaikutteisesti<br>
+                tarvitsee vain harvoissa tilanteissa lisäohjeita<br>
+                hyödyntää työssä tarvittavaa tietoa tarkoituksenmukaisesti<br>
+                muuttaa toimintaansa saamansa palautteen ja omien havaintojen mukaisesti
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell table-cell-title"><strong>Hyvä 3</strong></div>
+            <div class="table-cell table-cell-description">
+                toteuttaa työkokonaisuuden itsenäisesti<br>
+                toimii yhteistyökykyisesti ja aloitteellisesti vuorovaikutustilanteissa<br>
+                selviytyy tavanomaisista ongelmanratkaisutilanteista<br>
+                hyödyntää työssä tarvittavaa tietoa monipuolisesti<br>
+                arvioi suoriutumistaan realistisesti
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell table-cell-title"><strong>Hyvä 4</strong></div>
+            <div class="table-cell table-cell-description">
+                suunnittelee ja toteuttaa työkokonaisuuden itsenäisesti<br>
+                toimii yhteistyökykyisesti ja rakentavasti vuorovaikutustilanteissa<br>
+                selviytyy ongelmanratkaisutilanteista hyödyntäen monipuolisia ratkaisutapoja<br>
+                soveltaa työssä tarvittavaa tietoa monipuolisesti ja perustellusti<br>
+                arvioi suoriutumistaan realistisesti sekä tunnistaa vahvuuksiaan ja kehittämisen kohteitaan
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell table-cell-title"><strong>Kiitettävä 5</strong></div>
+            <div class="table-cell table-cell-description">
+                suunnittelee ja toteuttaa työkokonaisuuden itsenäisesti ottaen huomioon muut toimijat<br>
+                toimii yhteistyökykyisesti ja rakentavasti haastavissakin vuorovaikutustilanteissa<br>
+                arvioi suoriutumistaan realistisesti sekä tunnistaa vahvuuksiaan ja kehittämisen kohteitaan<br>
+                soveltaa työssä tarvittavaa tietoa ongelmanratkaisutilanteissa monipuolisesti ja kriittisesti<br>
+                arvioi suoriutumistaan realistisesti ja esittää perusteltuja ratkaisuja osaamisensa kehittämiseen<br>
+                ymmärtää oman työnsä merkityksen osana laajempaa kokonaisuutta
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+<!-- # Arviointikriteerit
+
+| Arvosana          | Opiskelilja...                                                                                        |
+|-------------------|-------------------------------------------------------------------------------------------------------|
+| __Tyydyttävä 1__  | toteuttaa työn ohjeiden mukaisesti                                                                    |
+|                   | toimii yhteistyökykyisesti                                                                            |
+|                   | tarvitsee joissakin tilanteissa lisäohjeita                                                           |
+|                   | hyödyntää työssä tarvittavaa perustietoa                                                              |
+|                   | muuttaa toimintaansa saamansa palautteen mukaisesti                                                   |
+|                   |                                                                                                       |
+| __Tyydyttävä 2__  | toteuttaa työn oma-aloitteisesti ja ohjeiden mukaisesti                                               |
+|                   | toimii yhteistyökykyisesti ja vuorovaikutteisesti                                                     |
+|                   | tarvitsee vain harvoissa tilanteissa lisäohjeita                                                      |
+|                   | hyödyntää työssä tarvittavaa tietoa tarkoituksenmukaisesti                                            |
+|                   | muuttaa toimintaansa saamansa palautteen ja omien havaintojen mukaisesti                              |
+|                   |                                                                                                       |
+| __Hyvä 3__        | toteuttaa työkokonaisuuden itsenäisesti                                                               |
+|                   | toimii yhteistyökykyisesti ja aloitteellisesti vuorovaikutustilanteissa                               |
+|                   | selviytyy tavanomaisista ongelmanratkaisutilanteista                                                  |
+|                   | hyödyntää työssä tarvittavaa tietoa monipuolisesti                                                    |
+|                   | arvioi suoriutumistaan realistisesti                                                                  |
+|                   |                                                                                                       |
+| __Hyvä 4__        | suunnittelee ja toteuttaa työkokonaisuuden itsenäisesti                                               |
+|                   | toimii yhteistyökykyisesti ja rakentavasti vuorovaikutustilanteissa                                   |
+|                   | selviytyy ongelmanratkaisutilanteista hyödyntäen monipuolisia ratkaisutapoja                          |
+|                   | soveltaa työssä tarvittavaa tietoa monipuolisesti ja perustellusti                                    |
+|                   | arvioi suoriutumistaan realistisesti sekä tunnistaa vahvuuksiaan ja kehittämisen kohteitaan           |
+|                   |                                                                                                       |
+| __Kiitettävä 5__  | suunnittelee ja toteuttaa työkokonaisuuden itsenäisesti ottaen huomioon muut toimijat                 |
+|                   | toimii yhteistyökykyisesti ja rakentavasti haastavissakin vuorovaikutustilanteissa                    |
+|                   | arvioi suoriutumistaan realistisesti sekä tunnistaa vahvuuksiaan ja kehittämisen kohteitaan           |
+|                   | soveltaa työssä tarvittavaa tietoa ongelmanratkaisutilanteissa monipuolisesti ja kriittisesti         |
+|                   | arvioi suoriutumistaan realistisesti ja esittää perusteltuja ratkaisuja osaamisensa kehittämiseen     |
+|                   | ymmärtää oman työnsä merkityksen osana laajempaa kokonaisuutta                                        | -->

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etusivu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+            padding-top: 80px; /* Для компенсации фиксированного меню */
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap; /* Сохраняем обтекание элементов на новых строках */
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            position: fixed; /* Фиксируем меню */
+            top: 0; /* Навигация всегда будет сверху */
+            width: 100%; /* Меню будет растягиваться на всю ширину */
+            z-index: 1000; /* Чтобы оно всегда было поверх остального контента */
+            background-color: white; /* Белый фон для меню */
+            padding: 10px 0; /* Добавляем немного отступов сверху и снизу для улучшения внешнего вида */
+        }
+
+
+        .knipka {
+            width: 150px;
+            height: 50px;
+            background-color: hsl(225, 3%, 51%);
+            border: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .knipka a {
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .knipka:hover {
+            background-color: #000000;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px hsl(0, 0%, 100%);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .knipka {
+                width: 80%;
+            }
+        }
+
+        p {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="knipka"><a href="kriteerit.html">Kriteerit</a></div>
+        <div class="knipka"><a href="osaamisen_arviointi.html">Arviointi</a></div>
+        <div class="knipka"><a href="etusivu.html">Etusivu</a></div>
+        <div class="knipka"><a href="tutkinnonosat.html">Tutkintoosat</a></div>
+    </nav>
+
+    <p>
+        Tervetuloa etusivulle! Tämä on verkkosivusto, jossa esittelen omaa osaamistani ja portfoliotani. Sivusto on luotu asiakaspalvelun ja verkkosivustojen suunnittelun kurssia varten. Täältä löydät lisätietoja projektiemme arviointikriteereistä, portfoliostani sekä yhteystiedoista. Olen luonut nämä sivut itse ja toivon, että ne ilmentävät osaamistani ja oppimiskokemuksiani.
+    </p>
+
+</body>
+</html>
+
+    
+
+    <section class="main">
+        <div class="otsikko">
+            Tutkinnon muodostuminen
+        </div>
+
+        <div class="ensin_text">
+            <p>
+                Tieto- ja viestintätekniikan perustutkinnon laajuus on 180 osaamispistettä. 
+                Tutkinto muodostuu ammatillisista tutkinnon osista (145 osaamispistettä) 
+                ja yhteisistä tutkinnon osista (35 osaamispistettä).<br><br>
+                Ammatillisista tutkinnon osista pakollisia on 70–115 osaamispistettä ja valinnaisia 30–75 osaamispistettä. 
+                Tieto- ja viestintätekniikan perustutkinto sisältää seuraavat tutkintonimikkeet:
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <ul class="tutkintonimikkeet">
+            <li>elektroniikka-asentaja</li>
+            <li>hyvinvointiteknologia-asentaja</li>
+            <li>tietoverkkoasentaja</li>
+            <li>IT-tukihenkilö</li>
+            <li>ohjelmistokehittäjä</li>
+        </ul>
+    </section>
+
+</body>
+</html>
